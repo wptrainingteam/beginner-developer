@@ -4,4 +4,4 @@ Code examples for the WordPress Beginner Developer Learning Pathway and Learn.Wo
 
 ## Introduction to developing WordPress plugins
 
-- Bookstore plugin
+- [Bookstore plugin](https://github.com/wptrainingteam/beginner-developer/raw/main/bookstore.1.0.zip)
