@@ -1,0 +1,9 @@
+#wp_learn_form.blue {
+	border: 2px solid blue;
+	padding: 10px;
+}
+
+#wp_learn_form.red {
+	border: 2px solid red;
+	padding: 10px;
+}
