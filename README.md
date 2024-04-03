@@ -11,3 +11,7 @@ Code examples for the WordPress Beginner Developer Learning Pathway and Learn.Wo
 ## Introduction to developing for WordPress securely
 
 - [Learn Plugin Security](https://github.com/wptrainingteam/beginner-developer/raw/main/wp-learn-plugin-security.1.0.0.zip)
+
+## Introduction to Internationalization
+
+- [Internationalization Theme](https://github.com/wptrainingteam/beginner-developer/raw/main/internationalization.zip)
