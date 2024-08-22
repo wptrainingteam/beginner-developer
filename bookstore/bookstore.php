@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Bookstore
  * Description: A plugin to manage books
- * Version: 1.0
+ * Version: 1.0.0
  *
  */
 
@@ -63,10 +63,9 @@ function bookstore_add_isbn_to_quick_edit( $keys, $post ) {
 
 add_action( 'wp_enqueue_scripts', 'bookstore_enqueue_scripts' );
 function bookstore_enqueue_scripts() {
-	$post = get_post();
-	if ( 'book' !== $post->post_type ) {
-		return;
-	}
+	if ( ! is_singular( 'book' ) ) {
+        return;
+    }
 	wp_enqueue_style(
 		'bookstore-style',
 		plugins_url() . '/bookstore/bookstore.css'
