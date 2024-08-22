@@ -87,8 +87,7 @@ function bookstore_render_booklist() {
 
 add_action( 'wp_enqueue_scripts', 'bookstore_enqueue_scripts' );
 function bookstore_enqueue_scripts() {
-	$post = get_post();
-	if ( 'book' !== $post->post_type ) {
+	if ( ! is_singular( 'book' ) ) {
 		return;
 	}
 	wp_enqueue_style(
