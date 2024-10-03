@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Bookstore
  * Description: A plugin to manage books
- * Version: 1.0.1
+ * Version: 1.0.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -82,6 +82,24 @@ function bookstore_render_booklist() {
 		<h2>Books</h2>
 		<textarea id="bookstore-booklist" cols="125" rows="15"></textarea>
 	</div>
+
+    <div style="width:50%;">
+        <h2>Add Book</h2>
+        <form>
+            <div>
+                <label for="bookstore-book-title">Book Title</label>
+                <input type="text" id="bookstore-book-title" placeholder="Title">
+            </div>
+            <div>
+                <label for="bookstore-book-content">Book Content</label>
+                <textarea id="bookstore-book-content" cols="100" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="button" id="bookstore-submit-book" value="Add">
+            </div>
+        </form>
+    </div>
+
 	<?php
 }
 
